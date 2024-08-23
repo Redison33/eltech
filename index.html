@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./src/libs/slick.css" />
+        <link rel="stylesheet" href="./src/style/index/style-index.css" />
+        <!-- <link rel="shortcut icon" href="./src/img/ico/Vector.ico" type="image/x-icon" /> -->
+        <title>ЭлТехно</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__container container">
+                <button class="header__button header__button--active">
+                    <span></span>
+                    <span></span>
+                </button>
+                <picture>
+                    <source media="(max-width: 1500px)" srcset="./src/img/header-logo2.png" />
+                    <img src="./src/img/header-logo.png" alt="" class="header__logo" />
+                </picture>
+                <!-- <div class="header__wrap"> -->
+                <nav class="header__nav nav">
+                    <ul class="nav__list list">
+                        <li class="list__item item"><a href="">Преимущества</a></li>
+                        <li class="list__item item"><a href="">Услуги</a></li>
+                        <li class="list__item item"><a href="">Эксперты</a></li>
+                        <li class="list__item item"><a href="">Отзывы</a></li>
+                        <li class="list__item item"><a href="">Проекты</a></li>
+                        <li class="list__item item"><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a href="" class="header__phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                        <path
+                            d="M14.0497 6.5C15.0264 6.69057 15.924 7.16826 16.6277 7.87194C17.3314 8.57561 17.8091 9.47326 17.9997 10.45M14.0497 2.5C16.0789 2.72544 17.9713 3.63417 19.4159 5.07701C20.8606 6.51984 21.7717 8.41101 21.9997 10.44M10.2266 14.3631C9.02506 13.1615 8.07627 11.8028 7.38028 10.3532C7.32041 10.2285 7.29048 10.1662 7.26748 10.0873C7.18576 9.80695 7.24446 9.46269 7.41447 9.22526C7.46231 9.15845 7.51947 9.10129 7.63378 8.98698C7.98338 8.63737 8.15819 8.46257 8.27247 8.28679C8.70347 7.6239 8.70347 6.76932 8.27247 6.10643C8.15819 5.93065 7.98338 5.75585 7.63378 5.40624L7.43891 5.21137C6.90747 4.67993 6.64174 4.41421 6.35636 4.26987C5.7888 3.9828 5.11854 3.9828 4.55098 4.26987C4.2656 4.41421 3.99987 4.67993 3.46843 5.21137L3.3108 5.36901C2.78117 5.89863 2.51636 6.16344 2.31411 6.52348C2.08969 6.92298 1.92833 7.54347 1.9297 8.0017C1.93092 8.41464 2.01103 8.69687 2.17124 9.26131C3.03221 12.2947 4.65668 15.1571 7.04466 17.545C9.43264 19.933 12.295 21.5575 15.3284 22.4185C15.8928 22.5787 16.1751 22.6588 16.588 22.66C17.0462 22.6614 17.6667 22.5 18.0662 22.2756C18.4263 22.0733 18.6911 21.8085 19.2207 21.2789L19.3783 21.1213C19.9098 20.5898 20.1755 20.3241 20.3198 20.0387C20.6069 19.4712 20.6069 18.8009 20.3198 18.2333C20.1755 17.948 19.9098 17.6822 19.3783 17.1508L19.1835 16.9559C18.8339 16.6063 18.6591 16.4315 18.4833 16.3172C17.8204 15.8862 16.9658 15.8862 16.3029 16.3172C16.1271 16.4315 15.9523 16.6063 15.6027 16.9559C15.4884 17.0702 15.4313 17.1274 15.3644 17.1752C15.127 17.3453 14.7828 17.404 14.5024 17.3222C14.4235 17.2992 14.3612 17.2693 14.2365 17.2094C12.7869 16.5134 11.4282 15.5646 10.2266 14.3631Z"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </a>
+                <!-- </div> -->
+            </div>
+        </header>
+        <main>
+            <section class="general">
+                <div class="general__container container">
+                    <div class="general__wrap">
+                        <h1 class="general__title">
+                            Комплексное оснащение
+                            <span>государственных и коммерческих объектов</span>
+                        </h1>
+                        <ul class="general__list list">
+                            <li class="list__item item">Создаем качественные и функциональные пространства вовремя и в рамках бюджета</li>
+                            <li class="list__item item">Начинаем с разработки концепции и заканчиваем полной сдачей объекта и его обслуживанием</li>
+                        </ul>
+                    </div>
+                    <form action="">
+                        <p class="form__header">Узнать стоимость проекта</p>
+                        <input type="text" placeholder="ФИО" />
+                        <input type="tel" placeholder="Телефон" />
+                        <input type="email" placeholder="Email" />
+                        <input type="text" placeholder="Что нужно оснастить?" />
+                        <button>Отправить заявку</button>
+                        <p class="form__text">Нажимая “Отправить заявку” вы соглашаетесь с <a href="">Политикой конфиденциальности</a></p>
+                    </form>
+                </div>
+            </section>
+            <section class="budget">
+                <svg class="svg-left" xmlns="http://www.w3.org/2000/svg" width="598" height="905" viewBox="0 0 598 905" fill="none">
+                    <path
+                        d="M2.21182 933.735L348.982 542.192C369.244 519.261 380.44 489.598 380.434 458.861V392.443C380.422 361.708 369.211 332.053 348.937 309.134L0 -85H291.165L512.347 164.791C567.251 226.806 597.607 307.081 597.613 390.276V456.672C597.616 542.497 566.316 625.315 509.693 689.305L293.465 933.735H2.21182Z"
+                        fill="white"
+                    />
+                </svg>
+                <svg class="svg-right" xmlns="http://www.w3.org/2000/svg" width="357" height="905" viewBox="0 0 357 905" fill="none">
+                    <path
+                        d="M595.722 -85L249.018 306.543C228.74 329.467 217.528 359.131 217.522 389.873V456.292C217.533 487.027 228.745 516.681 249.018 539.601L598 933.735H306.835L85.653 683.944C30.773 621.919 0.441524 541.645 0.453617 458.459V392.063C0.450367 306.238 31.75 223.42 88.3736 159.429L304.557 -85H595.722Z"
+                        fill="white"
+                    />
+                </svg>
+                <div class="budget__container container">
+                    <h2 class="budget__title">Поможем максимально эффективно реализовать бюджет</h2>
+                    <div class="budget__card card card-sell">
+                        <svg width="320" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M52.6384 4.82459C67.5067 -0.587026 83.6458 -1.46815 99.0149 2.29264C114.384 6.05342 128.293 14.2872 138.982 25.9528C149.672 37.6184 156.662 52.1918 159.069 67.8301C161.476 83.4685 159.191 99.4694 152.505 113.809C145.818 128.15 135.029 140.185 121.502 148.393C107.975 156.601 92.3179 160.614 76.5104 159.924C60.703 159.234 45.4552 153.872 32.6952 144.516C19.9352 135.16 10.2362 122.23 4.82459 107.362L42.4123 93.6808C45.1181 101.115 49.9676 107.58 56.3476 112.258C62.7276 116.936 70.3515 119.617 78.2552 119.962C86.1589 120.307 93.9875 118.301 100.751 114.196C107.514 110.092 112.909 104.075 116.252 96.9047C119.596 89.7347 120.738 81.7342 119.534 73.9151C118.331 66.0959 114.836 58.8092 109.491 52.9764C104.146 47.1436 97.192 43.0267 89.5074 41.1463C81.8229 39.2659 73.7533 39.7065 66.3192 42.4123L52.6384 4.82459Z"
+                                fill="url(#paint0_linear_79_679)"
+                            />
+                            <path
+                                d="M4.81699 107.341C1.22655 97.4675 -0.384056 86.9839 0.0771153 76.4882C0.538287 65.9926 3.06221 55.6906 7.50478 46.1704C11.9473 36.6502 18.2216 28.0982 25.9692 21.0028C33.7168 13.9074 42.7861 8.40742 52.6593 4.81698L66.3297 42.4085C61.3931 44.2037 56.8584 46.9537 52.9846 50.5014C49.1108 54.0491 45.9737 58.3251 43.7524 63.0852C41.5311 67.8453 40.2691 72.9963 40.0386 78.2441C39.808 83.4919 40.6133 88.7338 42.4085 93.6704L4.81699 107.341Z"
+                                fill="url(#paint1_linear_79_679)"
+                            />
+                            <defs>
+                                <linearGradient id="paint0_linear_79_679" x1="80" y1="0" x2="80" y2="160" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#91CAEB" />
+                                    <stop offset="1" stop-color="white" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_79_679" x1="80" y1="0" x2="80" y2="160" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#0033A1" />
+                                    <stop offset="1" stop-color="white" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <p class="card__title">Вы сэкономите до <span>30%</span> вашего бюджета за счет грамотного подбора оборудования</p>
+                    </div>
+                    <div class="budget__wrap">
+                        <div class="budget__card card card-small">
+                            <p class="card__title">Всегда предлагаем выбор под ваши потребности:</p>
+                            <button class="card__button">Рассчитать экономию</button>
+                        </div>
+                        <div class="budget__card card">
+                            <span class="card__number">01</span>
+                            <p class="card__title">Бюджетный аналог</p>
+                            <p class="card__text">Заменим оборудование на аналогичное, ориентируясь на ваш индивидуальный бюджет</p>
+                        </div>
+                        <div class="budget__card card">
+                            <span class="card__number">02</span>
+                            <p class="card__title">Максимальное функциональное оборудование</p>
+                            <p class="card__text">Стоит дороже, но закрывает сразу много задач</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pluses">
+                <div class="pluses__container container">
+                    <div class="pluses__content">
+                        <h2 class="pluses__title">Мы обладаем всем необходимым, чтобы решить ваши проблемы: <span>опыт, знания и ресурсы</span></h2>
+
+                        <p class="pluses__text">
+                            Обращаясь к нам, вы получаете комплексное решение, основанное на требованиях Федерального государственного
+                            образовательного стандарта
+                        </p>
+                    </div>
+                    <button class="pluses__button">Скачать презентацию</button>
+                    <div class="pluses__cards">
+                        <div class="pluses__card card">
+                            <span class="card__number">01</span>
+                            <p class="card__title">Звуковое, световое оборудование, механика и одежда сцены. Проекционное оборудование</p>
+                        </div>
+                        <div class="pluses__card card">
+                            <span class="card__number">02</span>
+                            <p class="card__title">Услуги проектировщиков и монтажников</p>
+                        </div>
+                        <div class="pluses__card card">
+                            <span class="card__number">03</span>
+                            <p class="card__title">Обучение по работе с оборудованием</p>
+                        </div>
+                        <div class="pluses__card card">
+                            <span class="card__number">04</span>
+                            <p class="card__title">Обязательное оснащение по приказу 804 Минпросвещения РФ</p>
+                        </div>
+                        <div class="pluses__card card">
+                            <span class="card__number">05</span>
+                            <p class="card__title">Современные средства обучения, воспитания и развития детей</p>
+                        </div>
+                        <div class="pluses__card card">
+                            <span class="card__number">06</span>
+                            <p class="card__title">Интерактивные комплексы, мультимедийные системы, цифровое оборудование</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="FAQ">
+                <svg class="svg-left" xmlns="http://www.w3.org/2000/svg" width="598" height="905" viewBox="0 0 598 905" fill="none">
+                    <path
+                        d="M2.21182 933.735L348.982 542.192C369.244 519.261 380.44 489.598 380.434 458.861V392.443C380.422 361.708 369.211 332.053 348.937 309.134L0 -85H291.165L512.347 164.791C567.251 226.806 597.607 307.081 597.613 390.276V456.672C597.616 542.497 566.316 625.315 509.693 689.305L293.465 933.735H2.21182Z"
+                        fill="white"
+                    />
+                </svg>
+                <svg class="svg-right" xmlns="http://www.w3.org/2000/svg" width="357" height="905" viewBox="0 0 357 905" fill="none">
+                    <path
+                        d="M595.722 -85L249.018 306.543C228.74 329.467 217.528 359.131 217.522 389.873V456.292C217.533 487.027 228.745 516.681 249.018 539.601L598 933.735H306.835L85.653 683.944C30.773 621.919 0.441524 541.645 0.453617 458.459V392.063C0.450367 306.238 31.75 223.42 88.3736 159.429L304.557 -85H595.722Z"
+                        fill="white"
+                    />
+                </svg>
+                <img src="./src/img/FAQ.png" alt="" />
+                <div class="FAQ__container container">
+                    <h2 class="FAQ__title">Мы пониманием, какие <span>вопросы</span> вас волнуют при выборе поставщика:</h2>
+                    <div class="FAQ__cards">
+                        <div class="FAQ__card card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                                <path
+                                    d="M32.5 19.5L19.5 32.5M19.5 19.5L32.5 32.5M47.6666 26C47.6666 37.9662 37.9662 47.6667 26 47.6667C14.0338 47.6667 4.33331 37.9662 4.33331 26C4.33331 14.0339 14.0338 4.33337 26 4.33337C37.9662 4.33337 47.6666 14.0339 47.6666 26Z"
+                                    stroke="white"
+                                    stroke-width="3"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            <p class="card__title">Недобросовестность поставщика</p>
+                        </div>
+                        <div class="FAQ__card card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                                <path
+                                    d="M32.5 19.5L19.5 32.5M19.5 19.5L32.5 32.5M47.6666 26C47.6666 37.9662 37.9662 47.6667 26 47.6667C14.0338 47.6667 4.33331 37.9662 4.33331 26C4.33331 14.0339 14.0338 4.33337 26 4.33337C37.9662 4.33337 47.6666 14.0339 47.6666 26Z"
+                                    stroke="white"
+                                    stroke-width="3"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            <p class="card__title">Срыв сроков</p>
+                        </div>
+                        <div class="FAQ__card card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                                <path
+                                    d="M32.5 19.5L19.5 32.5M19.5 19.5L32.5 32.5M47.6666 26C47.6666 37.9662 37.9662 47.6667 26 47.6667C14.0338 47.6667 4.33331 37.9662 4.33331 26C4.33331 14.0339 14.0338 4.33337 26 4.33337C37.9662 4.33337 47.6666 14.0339 47.6666 26Z"
+                                    stroke="white"
+                                    stroke-width="3"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            <p class="card__title">Сложности в составлении технического задания</p>
+                            <img src="./src/img/FAQ-card3.png" alt="" />
+                        </div>
+                        <div class="FAQ__card card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                                <path
+                                    d="M32.5 19.5L19.5 32.5M19.5 19.5L32.5 32.5M47.6666 26C47.6666 37.9662 37.9662 47.6667 26 47.6667C14.0338 47.6667 4.33331 37.9662 4.33331 26C4.33331 14.0339 14.0338 4.33337 26 4.33337C37.9662 4.33337 47.6666 14.0339 47.6666 26Z"
+                                    stroke="white"
+                                    stroke-width="3"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            <p class="card__title">Нет нужного оборудования в одном месте</p>
+                        </div>
+                        <div class="FAQ__card card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                                <path
+                                    d="M32.5 19.5L19.5 32.5M19.5 19.5L32.5 32.5M47.6666 26C47.6666 37.9662 37.9662 47.6667 26 47.6667C14.0338 47.6667 4.33331 37.9662 4.33331 26C4.33331 14.0339 14.0338 4.33337 26 4.33337C37.9662 4.33337 47.6666 14.0339 47.6666 26Z"
+                                    stroke="white"
+                                    stroke-width="3"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            <p class="card__title">Некачественный сервис</p>
+                        </div>
+                        <div class="FAQ__card card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                                <path
+                                    d="M32.5 19.5L19.5 32.5M19.5 19.5L32.5 32.5M47.6666 26C47.6666 37.9662 37.9662 47.6667 26 47.6667C14.0338 47.6667 4.33331 37.9662 4.33331 26C4.33331 14.0339 14.0338 4.33337 26 4.33337C37.9662 4.33337 47.6666 14.0339 47.6666 26Z"
+                                    stroke="white"
+                                    stroke-width="3"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            <p class="card__title">Завершенные цены: как не превысить бюджет</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="feedback">
+                <div class="feedback__container container">
+                    <div class="feedback__wrap feedback__wrap-left">
+                        <h2 class="feedback__title">Возьмем всю работу <span>на себя!</span></h2>
+                        <p class="feedback__text">
+                            Поставка, установка и монтаж любого оборудования для школ, детских садов, домов культуры, гостиниц, спортивных и
+                            туристических организаций
+                        </p>
+                        <button class="feedback__button">Оставить заявку</button>
+                    </div>
+                    <div class="feedback__wrap feedback__wrap-right">
+                        <div class="feedback__card card">
+                            <span class="card__number">01</span>
+                            <p class="card__title">
+                                Поставка, установка и монтаж любого оборудования для школ, детских садов, домов культуры, гостиниц, спортивных и
+                                туристических организаций
+                            </p>
+                        </div>
+                        <div class="feedback__card card">
+                            <span class="card__number">02</span>
+                            <p class="card__title">Обучение работе с оборудованием</p>
+                        </div>
+                        <div class="feedback__card card">
+                            <span class="card__number">03</span>
+                            <p class="card__title">Сопровождение и гарантийное обслуживание</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="progress">
+                <svg class="svg-left" xmlns="http://www.w3.org/2000/svg" width="598" height="771" viewBox="0 0 598 771" fill="none">
+                    <path
+                        d="M2.21182 868.427L348.982 497.112C369.244 475.365 380.44 447.235 380.434 418.086V355.099C380.422 325.952 369.211 297.829 348.937 276.094L0 -97.679H291.165L512.347 139.208C567.251 198.019 597.607 274.147 597.613 353.044V416.01C597.616 497.401 566.316 575.94 509.693 636.625L293.465 868.427H2.21182Z"
+                        fill="url(#paint0_linear_116_51)"
+                    />
+                    <defs>
+                        <linearGradient id="paint0_linear_116_51" x1="394.443" y1="78.4418" x2="382.657" y2="920.611" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" stop-opacity="0" />
+                            <stop offset="0.639409" stop-color="white" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <svg class="svg-right" xmlns="http://www.w3.org/2000/svg" width="360" height="771" viewBox="0 0 360 771" fill="none">
+                    <path
+                        d="M595.722 -97.679L249.018 273.636C228.74 295.377 217.528 323.508 217.522 352.662V415.65C217.533 444.797 228.745 472.919 249.018 494.654L598 868.427H306.835L85.653 631.541C30.773 572.72 0.441524 496.593 0.453617 417.705V354.739C0.450367 273.348 31.75 194.808 88.3736 134.123L304.557 -97.679H595.722Z"
+                        fill="url(#paint0_linear_116_52)"
+                    />
+                    <defs>
+                        <linearGradient id="paint0_linear_116_52" x1="394.853" y1="78.4418" x2="383.066" y2="920.611" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" stop-opacity="0" />
+                            <stop offset="0.639409" stop-color="white" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <img src="./src/img/progress.png" alt="" />
+                <div class="progress__container container">
+                    <h2 class="progress__title">
+                        <span>14&nbsp;ЛЕТ</span>
+                        <span>кропотливой работы позволили нам...</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="83" height="52" viewBox="0 0 83 52" fill="none">
+                            <path
+                                d="M36.6723 1.56998L36.6427 0.570419L36.6723 1.56998ZM65.0994 19.662L66.0174 19.2655L65.0994 19.662ZM78.247 51.8869C78.7604 52.0906 79.3416 51.8395 79.5453 51.3262L82.8644 42.9605C83.068 42.4472 82.817 41.8659 82.3036 41.6622C81.7903 41.4586 81.209 41.7096 81.0053 42.223L78.0551 49.6591L70.6189 46.7088C70.1056 46.5052 69.5243 46.7562 69.3206 47.2696C69.117 47.7829 69.368 48.3642 69.8814 48.5679L78.247 51.8869ZM0.326188 3.64431L36.7018 2.56955L36.6427 0.570419L0.267121 1.64518L0.326188 3.64431ZM64.1813 20.0585L77.6978 51.3539L79.5338 50.5609L66.0174 19.2655L64.1813 20.0585ZM36.7018 2.56955C48.5797 2.2186 59.4697 9.14941 64.1813 20.0585L66.0174 19.2655C60.9809 7.60406 49.3398 0.195271 36.6427 0.570419L36.7018 2.56955Z"
+                                fill="url(#paint0_linear_116_78)"
+                            />
+                            <defs>
+                                <linearGradient
+                                    id="paint0_linear_116_78"
+                                    x1="8.48951"
+                                    y1="-10.6366"
+                                    x2="86.8087"
+                                    y2="37.676"
+                                    gradientUnits="userSpaceOnUse"
+                                >
+                                    <stop stop-color="#00133B" stop-opacity="0" />
+                                    <stop offset="1" stop-color="#0033A1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </h2>
+                    <div class="progress__cards">
+                        <div class="progress__card card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                                <path
+                                    d="M17.5 28.0001L24.5 35.0001L38.5 21.0001M51.3333 28.0001C51.3333 40.8867 40.8866 51.3334 28 51.3334C15.1133 51.3334 4.66663 40.8867 4.66663 28.0001C4.66663 15.1134 15.1133 4.66675 28 4.66675C40.8866 4.66675 51.3333 15.1134 51.3333 28.0001Z"
+                                    stroke="#52DE85"
+                                    stroke-width="4"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            <p class="card__title">Оснастить<span>350 школ, 250 детских садов в разных регионах РФ</span></p>
+                        </div>
+                        <div class="progress__card card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                                <path
+                                    d="M17.5 28.0001L24.5 35.0001L38.5 21.0001M51.3333 28.0001C51.3333 40.8867 40.8866 51.3334 28 51.3334C15.1133 51.3334 4.66663 40.8867 4.66663 28.0001C4.66663 15.1134 15.1133 4.66675 28 4.66675C40.8866 4.66675 51.3333 15.1134 51.3333 28.0001Z"
+                                    stroke="#52DE85"
+                                    stroke-width="4"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            <p class="card__title">Принять участие<span>в оснащении 270 объектов по национальным проектам</span></p>
+                        </div>
+                        <div class="progress__card card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                                <path
+                                    d="M17.5 28.0001L24.5 35.0001L38.5 21.0001M51.3333 28.0001C51.3333 40.8867 40.8866 51.3334 28 51.3334C15.1133 51.3334 4.66663 40.8867 4.66663 28.0001C4.66663 15.1134 15.1133 4.66675 28 4.66675C40.8866 4.66675 51.3333 15.1134 51.3333 28.0001Z"
+                                    stroke="#52DE85"
+                                    stroke-width="4"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            <p class="card__title">Поставить оборудования<span>Более чем в 20 новостроек</span></p>
+                        </div>
+                        <div class="progress__card card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                                <path
+                                    d="M17.5 28.0001L24.5 35.0001L38.5 21.0001M51.3333 28.0001C51.3333 40.8867 40.8866 51.3334 28 51.3334C15.1133 51.3334 4.66663 40.8867 4.66663 28.0001C4.66663 15.1134 15.1133 4.66675 28 4.66675C40.8866 4.66675 51.3333 15.1134 51.3333 28.0001Z"
+                                    stroke="#52DE85"
+                                    stroke-width="4"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            <p class="card__title">Выстроить надежные отношения<span>с более чем 30 партнёрами</span></p>
+                        </div>
+                    </div>
+                    <p class="progress__text">
+                        Мы всегда открыты к сотрудничеству с
+                        <span>учебными заведениями, гостиницами, спортивными, туристическими организациями и др.</span>
+                    </p>
+                </div>
+            </section>
+            <section class="deliver">
+                <div class="deliver__container container">
+                    <h2 class="deliver__title">Поставляем</h2>
+                    <button class="deliver__button">Получить плайс</button>
+                    <div class="deliver__cards">
+                        <div class="deliver__card card">
+                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <p class="card__title">Оснащение предметных кабинетов</p>
+                        </div>
+                        <div class="deliver__card card">
+                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <p class="card__title">Оснащение предметных кабинетов</p>
+                        </div>
+                        <div class="deliver__card card">
+                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <p class="card__title">Оснащение предметных кабинетов</p>
+                        </div>
+                        <div class="deliver__card card">
+                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <p class="card__title">Оснащение предметных кабинетов</p>
+                        </div>
+                        <div class="deliver__card card">
+                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <p class="card__title">Оснащение предметных кабинетов</p>
+                        </div>
+                        <div class="deliver__card card">
+                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <p class="card__title">Оснащение предметных кабинетов</p>
+                        </div>
+                        <div class="deliver__card card">
+                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <p class="card__title">Оснащение предметных кабинетов</p>
+                        </div>
+                        <div class="deliver__card card">
+                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <p class="card__title">Оснащение предметных кабинетов</p>
+                        </div>
+                        <div class="deliver__card card">
+                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <p class="card__title">Оснащение предметных кабинетов</p>
+                        </div>
+                        <div class="deliver__card card">
+                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <p class="card__title">Оснащение предметных кабинетов</p>
+                        </div>
+                        <div class="deliver__card card">
+                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <p class="card__title">Оснащение предметных кабинетов</p>
+                        </div>
+                        <div class="deliver__card card">
+                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <p class="card__title">Оснащение предметных кабинетов</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="brand">
+                <div class="brand__container">
+                    <h2 class="brand__title">Оборудование известных отечественных и зарубежных брендов</h2>
+                    <div class="brand__wrap">
+                        <div class="bar">
+                            <img src="./src/img/brand1.png" alt="" />
+                            <img src="./src/img/brand2.png" alt="" />
+                            <img src="./src/img/brand3.png" alt="" />
+                            <img src="./src/img/brand4.png" alt="" />
+                            <img src="./src/img/brand5.png" alt="" />
+                            <img src="./src/img/brand6.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="brand__wrap">
+                        <div class="bar bar-second">
+                            <img src="./src/img/brand7.png" alt="" />
+                            <img src="./src/img/brand8.png" alt="" />
+                            <img src="./src/img/brand9.png" alt="" />
+                            <img src="./src/img/brand10.png" alt="" />
+                            <img src="./src/img/brand11.png" alt="" />
+                            <img src="./src/img/brand12.png" alt="" />
+                            <img src="./src/img/brand13.png" alt="" />
+                            <img src="./src/img/brand14.png" alt="" />
+                            <img src="./src/img/brand15.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="brand__wrap">
+                        <div class="bar">
+                            <img src="./src/img/brand16.png" alt="" />
+                            <img src="./src/img/brand17.png" alt="" />
+                            <img src="./src/img/brand18.png" alt="" />
+                            <img src="./src/img/brand19.png" alt="" />
+                            <img src="./src/img/brand20.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="info">
+                <div class="info__container">
+                    <div class="info__wrap info__wrap-top">
+                        <svg class="svg-left" xmlns="http://www.w3.org/2000/svg" width="885" height="1648" viewBox="0 0 885 1648" fill="none">
+                            <path
+                                d="M-165.244 1722.73L446.351 1032.17C482.088 991.73 501.834 939.414 501.823 885.204V768.062C501.803 713.856 482.029 661.554 446.273 621.131L-169.145 -74H344.38L734.477 366.555C831.311 475.93 884.849 617.511 884.86 764.24V881.343C884.866 1032.71 829.663 1178.78 729.796 1291.64L348.437 1722.73H-165.244Z"
+                                fill="url(#paint0_linear_45_37)"
+                                fill-opacity="0.05"
+                            />
+                            <defs>
+                                <linearGradient
+                                    id="paint0_linear_45_37"
+                                    x1="357.858"
+                                    y1="0.999993"
+                                    x2="357.858"
+                                    y2="1609"
+                                    gradientUnits="userSpaceOnUse"
+                                >
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="#4A7DC5" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <svg class="svg-right" xmlns="http://www.w3.org/2000/svg" width="884" height="1648" viewBox="0 0 884 1648" fill="none">
+                            <path
+                                d="M1050.13 -74L438.649 616.561C402.884 656.993 383.109 709.311 383.099 763.531V880.673C383.119 934.879 402.893 987.181 438.649 1027.6L1054.15 1722.73H540.62L150.523 1282.18C53.7312 1172.79 0.235759 1031.21 0.257086 884.495V767.392C0.251356 616.024 55.4544 469.958 155.321 357.098L536.602 -74H1050.13Z"
+                                fill="url(#paint0_linear_45_38)"
+                                fill-opacity="0.05"
+                            />
+                            <defs>
+                                <linearGradient
+                                    id="paint0_linear_45_38"
+                                    x1="527.201"
+                                    y1="0.999993"
+                                    x2="527.201"
+                                    y2="1609"
+                                    gradientUnits="userSpaceOnUse"
+                                >
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="#4A7DC5" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="info__content container">
+                            <div class="info__card card">
+                                <div class="card__content">
+                                    <h3 class="card__title">Своя команда разработчиков</h3>
+                                    <p class="card__text">
+                                        Воплотим в жизнь любую (даже самую эксклюзивную) идею организации по созданию интерактивных и мультимедийных
+                                        программ, используя современные технологии
+                                    </p>
+                                    <button class="card__button">Обсудить идеи</button>
+                                </div>
+                                <img src="./src/img/info1.jfif" alt="" />
+                            </div>
+                            <div class="info__card card">
+                                <img src="./src/img/info2.png" alt="" />
+                                <div class="card__content">
+                                    <h3 class="card__title">Опытные монтажники</h3>
+                                    <p class="card__text">Учитываем индивидуальные потребности и финансовые возможности каждого клиента</p>
+                                    <button class="card__button">Рассчитать установку</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__wrap info__wrap-bottom">
+                        <svg width="1054" height="2016" viewBox="0 0 1054 2016" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1049.87 0L438.392 774.612C402.627 819.965 382.852 878.651 382.842 939.47V1070.87C382.862 1131.67 402.636 1190.34 438.392 1235.68L1053.89 2015.42H540.363L150.266 1521.25C53.4742 1398.54 -0.021321 1239.73 6.37456e-06 1075.16V943.801C-0.00572457 774.009 55.1973 610.166 155.064 483.569L536.345 0H1049.87Z"
+                                fill="white"
+                                fill-opacity="0.05"
+                            />
+                        </svg>
+                        <svg width="961" height="1236" viewBox="0 0 961 1236" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M293.842 1070.87V939.47C293.852 878.651 313.627 819.965 349.392 774.612L960.87 0H447.345L65.9468 483.569L64.3083 485.646C-23.6587 598.086 -18.7434 769.264 69.6528 881.261L349.392 1235.68C313.636 1190.34 293.862 1131.67 293.842 1070.87Z"
+                                fill="white"
+                                fill-opacity="0.05"
+                            />
+                        </svg>
+                        <div class="info__content container">
+                            <div class="info__card card">
+                                <div class="card__content">
+                                    <h3 class="card__title">Обучим работать с оборудованием и программами</h3>
+                                    <p class="card__text">
+                                        Наш специалист продемонстрирует все возможности оборудования во время очного или дистанционного обучения ваших
+                                        сотрудников
+                                    </p>
+                                    <div class="card__info">
+                                        <img src="./src/img/info-usb.png" alt="" />
+                                        <p class="card__text">Также мы предоставим вам необходимые обучающие материалы на электронном носителе</p>
+                                    </div>
+                                    <button class="card__button">Получить консультацию</button>
+                                </div>
+                                <img src="./src/img/info3.jfif" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="experts">
+                <div class="experts__container container">
+                    <h2 class="experts__title">Эксперты Элтехно</h2>
+                    <button class="experts__button">Задать вопрос специалисту</button>
+                    <div class="experts__cards">
+                        <div class="experts__card card">
+                            <img src="./src/img/experts1.jpg" alt="" />
+                            <div class="card__content">
+                                <p class="card__text card__name">Солодухин Сергей Владимирович</p>
+                                <p class="card__text card__position">Генеральный директор</p>
+                                <p class="card__text card__email">ssv@eltehno.pro</p>
+                                <p class="card__text card__number">+7 (910) 770-26-19</p>
+                            </div>
+                        </div>
+                        <div class="experts__card card">
+                            <img src="./src/img/experts2.jpg" alt="" />
+                            <div class="card__content">
+                                <p class="card__text card__name">Ширвари Денис Артурович</p>
+                                <p class="card__text card__position">Руководитель проекта</p>
+                                <p class="card__text card__email">sda@eltehno.pro</p>
+                                <p class="card__text card__number">+7 (910) 695-26-25</p>
+                            </div>
+                        </div>
+                        <div class="experts__card card">
+                            <img src="./src/img/experts3.jpg" alt="" />
+                            <div class="card__content">
+                                <p class="card__text card__name">Школьникова Полина Вячеславовна</p>
+                                <p class="card__text card__position">Менеджер проектов</p>
+                                <p class="card__text card__email">ap@eltehno.pro</p>
+                                <p class="card__text card__number"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="clients">
+                <div class="clients__container container">
+                    <h2 class="clients__title">Клиенты, которые нам доверяют</h2>
+                    <div class="clients__cards">
+                        <div class="clients__card card">
+                            <p class="card__comment">
+                                Администрация Камешковского района выражает благодарность компании за высокий профессионализм, активное участие в
+                                проведении мероприятий при строительстве объекта “Школа на 657 мест в г. Камешково” по программе национального проекта
+                                “Образование”.
+                            </p>
+                            <div class="card__profile profile">
+                                <img src="" alt="" />
+                                <div class="profile__content">
+                                    <p class="profile__name">Курганский А.З</p>
+                                    <p class="profile__position">Глава администрации Камешковского района</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__card card">
+                            <p class="card__comment">
+                                Выражаю вам свою искреннюю признательность за наше плодотворное сотрудничество! Наши совместные усилия привели нас к
+                                закономерной деловой победе! Верим, что в дальнейшем мы с вами сумеем сохранить и продолжить наши партнёрские
+                                отношения.
+                            </p>
+                            <div class="card__profile profile">
+                                <img src="" alt="" />
+                                <div class="profile__content">
+                                    <p class="profile__name">Ярошевский А.В</p>
+                                    <p class="profile__position">Директор Департамента экономического развития Владимирской области</p>
+                                </div>
+                            </div>
+                            <div class="card__profile profile">
+                                <img src="" alt="" />
+                                <div class="profile__content">
+                                    <p class="profile__name">Никеров М.А</p>
+                                    <p class="profile__position">Директор АНО Агенства экономического развития Владимирской области</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__card card">
+                            <p class="card__comment">
+                                Филиал во Владимирской и Ивановской областях ПАО “Ростелеком” выражает благодарность компании и генеральному директору
+                                за плодотворное сотрудничество. Хотим подчеркнуть высокий уровень профессионализма вашего персонала и поблагодарить за
+                                оперативность в решении вопросов.
+                            </p>
+                            <div class="card__profile profile">
+                                <img src="" alt="" />
+                                <div class="profile__content">
+                                    <p class="profile__name">Шатохин П.М</p>
+                                    <p class="profile__position">Директор филиала</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="certificates">
+                <svg width="1054" height="2016" viewBox="0 0 1054 2016" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1049.87 0L438.392 774.612C402.627 819.965 382.852 878.651 382.842 939.47V1070.87C382.862 1131.67 402.636 1190.34 438.392 1235.68L1053.89 2015.42H540.363L150.266 1521.25C53.4742 1398.54 -0.021321 1239.73 6.37456e-06 1075.16V943.801C-0.00572457 774.009 55.1973 610.166 155.064 483.569L536.345 0H1049.87Z"
+                        fill="white"
+                        fill-opacity="0.05"
+                    />
+                </svg>
+                <svg width="961" height="1236" viewBox="0 0 961 1236" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M293.842 1070.87V939.47C293.852 878.651 313.627 819.965 349.392 774.612L960.87 0H447.345L65.9468 483.569L64.3083 485.646C-23.6587 598.086 -18.7434 769.264 69.6528 881.261L349.392 1235.68C313.636 1190.34 293.862 1131.67 293.842 1070.87Z"
+                        fill="white"
+                        fill-opacity="0.05"
+                    />
+                </svg>
+                <div class="certificates__container container">
+                    <h2 class="certificates__title">
+                        Поставляемая нами продукция полностью соответствует требованиям Госстандарта России и имеет все необходимые сертификаты и
+                        санитарно-эпидемиологические заключения
+                    </h2>
+                    <div class="certificates__imgs">
+                        <img src="./src/img/certificates1.jfif" alt="" />
+                        <img src="./src/img/certificates2.jfif" alt="" />
+                        <img src="./src/img/certificates3.jfif" alt="" />
+                        <img src="./src/img/certificates4.jfif" alt="" />
+                    </div>
+                </div>
+            </section>
+            <section class="cases">
+                <div class="cases__container">
+                    <div class="cases__content container">
+                        <h2 class="cases__title">Наши кейсы</h2>
+                        <button class="cases__button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <path
+                                    d="M21.5 21H3.5M18.5 11L12.5 17M12.5 17L6.5 11M12.5 17V3"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            Скачать кейсы
+                        </button>
+                        <button class="cases__button">Больше кейсов</button>
+                    </div>
+                    <div class="cases__slider">
+                        <div class="cases__slide slide">
+                            <div class="slide__content">
+                                <h3 class="slide__title">СОШ №46</h3>
+                                <p class="slide__text">г. Владимир</p>
+                                <ul class="slide__list list">
+                                    <li class="list__item item">
+                                        <span class="item__number">01</span>
+                                        <p class="item__text">Монтаж системы связи и слаботочных систем</p>
+                                    </li>
+                                    <li class="list__item item">
+                                        <span class="item__number">02</span>
+                                        <p class="item__text">Поставка и установка оборудования для актового зала: звук, свет, экран</p>
+                                    </li>
+                                    <li class="list__item item">
+                                        <span class="item__number">03</span>
+                                        <p class="item__text">Предметные кабинеты</p>
+                                    </li>
+                                    <li class="list__item item">
+                                        <span class="item__number">04</span>
+                                        <p class="item__text">Поставка интерактивного оборудования</p>
+                                    </li>
+                                    <li class="list__item item">
+                                        <span class="item__number">05</span>
+                                        <p class="item__text">Поставка интерактивного оборудования</p>
+                                    </li>
+                                </ul>
+                                <div class="slide__tags">
+                                    <a href="" class="slide__tag">Новостройка</a>
+                                    <a href="" class="slide__tag">Оснащение по 465 приказу</a>
+                                </div>
+                            </div>
+                            <img src="./src/img/cases.jfif" alt="" />
+                        </div>
+                        <div class="cases__slide slide">
+                            <div class="slide__content">
+                                <h3 class="slide__title">СОШ №46</h3>
+                                <p class="slide__text">г. Владимир</p>
+                                <ul class="slide__list list">
+                                    <li class="list__item item">
+                                        <span class="item__number">01</span>
+                                        <p class="item__text">Монтаж системы связи и слаботочных систем</p>
+                                    </li>
+                                    <li class="list__item item">
+                                        <span class="item__number">02</span>
+                                        <p class="item__text">Поставка и установка оборудования для актового зала: звук, свет, экран</p>
+                                    </li>
+                                    <li class="list__item item">
+                                        <span class="item__number">03</span>
+                                        <p class="item__text">Предметные кабинеты</p>
+                                    </li>
+                                    <li class="list__item item">
+                                        <span class="item__number">04</span>
+                                        <p class="item__text">Поставка интерактивного оборудования</p>
+                                    </li>
+                                    <li class="list__item item">
+                                        <span class="item__number">05</span>
+                                        <p class="item__text">Поставка интерактивного оборудования</p>
+                                    </li>
+                                </ul>
+                                <div class="slide__tags">
+                                    <a href="" class="slide__tag">Новостройка</a>
+                                    <a href="" class="slide__tag">Оснащение по 465 приказу</a>
+                                </div>
+                            </div>
+                            <img src="./src/img/cases.jfif" alt="" />
+                        </div>
+                        <div class="cases__slide slide">
+                            <div class="slide__content">
+                                <h3 class="slide__title">СОШ №46</h3>
+                                <p class="slide__text">г. Владимир</p>
+                                <ul class="slide__list list">
+                                    <li class="list__item item">
+                                        <span class="item__number">01</span>
+                                        <p class="item__text">Монтаж системы связи и слаботочных систем</p>
+                                    </li>
+                                    <li class="list__item item">
+                                        <span class="item__number">02</span>
+                                        <p class="item__text">Поставка и установка оборудования для актового зала: звук, свет, экран</p>
+                                    </li>
+                                    <li class="list__item item">
+                                        <span class="item__number">03</span>
+                                        <p class="item__text">Предметные кабинеты</p>
+                                    </li>
+                                    <li class="list__item item">
+                                        <span class="item__number">04</span>
+                                        <p class="item__text">Поставка интерактивного оборудования</p>
+                                    </li>
+                                    <li class="list__item item">
+                                        <span class="item__number">05</span>
+                                        <p class="item__text">Поставка интерактивного оборудования</p>
+                                    </li>
+                                </ul>
+                                <div class="slide__tags">
+                                    <a href="" class="slide__tag">Новостройка</a>
+                                    <a href="" class="slide__tag">Оснащение по 465 приказу</a>
+                                </div>
+                            </div>
+                            <img src="./src/img/cases.jfif" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact">
+                <div class="contact__container container">
+                    <div class="contact__wrap">
+                        <h2 class="contact__title">
+                            Реализуем проекты любой сложности
+                            <span>“Под ключ”</span>
+                        </h2>
+                        <p class="contact__address">
+                            195030, г. Санкт-Петербург, МО Ржевка, ул. Электропультовцев 7, литера М, помещение 24-Н, офис 225А
+                        </p>
+                        <div class="contact__cards">
+                            <div class="contact__card card">
+                                <a class="card__link" href="tel:+7 (910) 770-26-19">+7 (910) 770-26-19</a>
+                                <p class="card__info">Бесплатный звонок по России</p>
+                            </div>
+                            <div class="contact__card card">
+                                <a class="card__link" href="mailto:eltechno@internet.ru">eltechno@internet.ru</a>
+                                <p class="card__info">Ответим в течении 5 минут!</p>
+                            </div>
+                        </div>
+                        <div class="contact__links">
+                            <a href="" class="contact__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M22 16.19C22 19.83 19.83 22 16.19 22H15C14.45 22 14 21.55 14 21V15.23C14 14.96 14.22 14.73 14.49 14.73L16.25 14.7C16.39 14.69 16.51 14.59 16.54 14.45L16.89 12.54C16.92 12.36 16.78 12.19 16.59 12.19L14.46 12.22C14.18 12.22 13.96 12 13.95 11.73L13.91 9.28C13.91 9.12 14.04 8.98001 14.21 8.98001L16.61 8.94C16.78 8.94 16.91 8.81001 16.91 8.64001L16.87 6.23999C16.87 6.06999 16.74 5.94 16.57 5.94L13.87 5.98001C12.21 6.01001 10.89 7.37 10.92 9.03L10.97 11.78C10.98 12.06 10.76 12.28 10.48 12.29L9.28 12.31C9.11 12.31 8.98001 12.44 8.98001 12.61L9.01001 14.51C9.01001 14.68 9.14 14.81 9.31 14.81L10.51 14.79C10.79 14.79 11.01 15.01 11.02 15.28L11.11 20.98C11.12 21.54 10.67 22 10.11 22H7.81C4.17 22 2 19.83 2 16.18V7.81C2 4.17 4.17 2 7.81 2H16.19C19.83 2 22 4.17 22 7.81V16.19Z"
+                                        fill="#001737"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="" class="contact__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M17 4H7C4 4 2 6 2 9V15C2 18 4 20 7 20H17C20 20 22 18 22 15V9C22 6 20 4 17 4ZM13.89 13.03L11.42 14.51C10.42 15.11 9.59998 14.65 9.59998 13.48V10.51C9.59998 9.34001 10.42 8.88001 11.42 9.48001L13.89 10.96C14.84 11.54 14.84 12.46 13.89 13.03Z"
+                                        fill="#001737"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="" class="contact__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M21.98 11.4104C21.64 5.61044 16.37 1.14045 10.3 2.14045C6.11998 2.83045 2.76999 6.22043 2.11999 10.4004C1.73999 12.8204 2.24001 15.1104 3.33001 17.0004L2.43999 20.3104C2.23999 21.0604 2.92998 21.7404 3.66998 21.5304L6.92999 20.6304C8.40999 21.5004 10.14 22.0004 11.99 22.0004C17.63 22.0004 22.31 17.0304 21.98 11.4104ZM16.88 15.7204C16.79 15.9004 16.68 16.0704 16.54 16.2304C16.29 16.5004 16.02 16.7004 15.72 16.8204C15.42 16.9504 15.09 17.0104 14.74 17.0104C14.23 17.0104 13.68 16.8905 13.11 16.6405C12.53 16.3905 11.96 16.0604 11.39 15.6504C10.81 15.2304 10.27 14.7604 9.74999 14.2504C9.22999 13.7304 8.76997 13.1804 8.34997 12.6104C7.93997 12.0404 7.60999 11.4704 7.36999 10.9004C7.12999 10.3304 7.01 9.78045 7.01 9.26045C7.01 8.92044 7.06999 8.59044 7.18999 8.29044C7.30999 7.98044 7.50001 7.70045 7.77001 7.45045C8.09001 7.13045 8.43999 6.98045 8.80999 6.98045C8.94999 6.98045 9.08996 7.01044 9.21996 7.07044C9.34996 7.13044 9.46999 7.22044 9.55999 7.35044L10.72 8.99043C10.81 9.12043 10.88 9.23043 10.92 9.34043C10.97 9.45043 10.99 9.55043 10.99 9.65043C10.99 9.77043 10.95 9.89045 10.88 10.0104C10.81 10.1304 10.72 10.2504 10.6 10.3704L10.22 10.7704C10.16 10.8304 10.14 10.8904 10.14 10.9704C10.14 11.0104 10.15 11.0504 10.16 11.0904C10.18 11.1304 10.19 11.1604 10.2 11.1904C10.29 11.3604 10.45 11.5704 10.67 11.8304C10.9 12.0904 11.14 12.3604 11.4 12.6204C11.67 12.8904 11.93 13.1304 12.2 13.3604C12.46 13.5804 12.68 13.7304 12.85 13.8204C12.88 13.8304 12.91 13.8504 12.94 13.8604C12.98 13.8804 13.02 13.8804 13.07 13.8804C13.16 13.8804 13.22 13.8504 13.28 13.7904L13.66 13.4104C13.79 13.2804 13.91 13.1904 14.02 13.1304C14.14 13.0604 14.25 13.0204 14.38 13.0204C14.48 13.0204 14.58 13.0404 14.69 13.0904C14.8 13.1404 14.92 13.2004 15.04 13.2904L16.7 14.4704C16.83 14.5604 16.92 14.6704 16.98 14.7904C17.03 14.9204 17.06 15.0404 17.06 15.1804C17 15.3504 16.96 15.5404 16.88 15.7204Z"
+                                        fill="#001737"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="" class="contact__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 7.12C13.31 7.12 14.38 8.19 14.38 9.5C14.38 10.81 13.31 11.88 12 11.88C10.69 11.88 9.62 10.81 9.62 9.5C9.62 8.19 10.69 7.12 12 7.12ZM14.47 17.09C14.33 17.2 14.17 17.25 14.01 17.25C13.79 17.25 13.57 17.15 13.42 16.97L12.01 15.19L10.6 16.97C10.35 17.29 9.86999 17.35 9.54999 17.09C9.22999 16.83 9.16999 16.36 9.42999 16.04L10.62 14.53C10.3 14.44 9.97999 14.33 9.67999 14.18C9.30999 13.99 9.15998 13.54 9.34998 13.17C9.52998 12.8 9.97999 12.65 10.36 12.84C11.4 13.36 12.64 13.36 13.68 12.84C14.04 12.66 14.5 12.8 14.68 13.16C14.87 13.52 14.74 13.97 14.38 14.16C14.07 14.32 13.74 14.43 13.41 14.52L14.61 16.03C14.84 16.36 14.79 16.83 14.47 17.09Z"
+                                        fill="#001737"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <form action="">
+                        <p class="form__header">Узнать стоимость проекта</p>
+                        <input type="text" placeholder="ФИО" />
+                        <input type="tel" placeholder="Телефон" />
+                        <input type="email" placeholder="Email" />
+                        <input type="text" placeholder="Что нужно оснастить?" />
+                        <button>Отправить заявку</button>
+                        <p class="form__text">Нажимая “Отправить заявку” вы соглашаетесь с <a href="">Политикой конфиденциальности</a></p>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__wrap footer__wrap-left">
+                    <a href="" class="footer__logo"><img src="./src/img/footer-logo.png" alt="" /></a>
+                    <button class="footer__button">Связаться с нами</button>
+                </div>
+                <div class="footer__wrap footer__wrap-center">
+                    <p class="footer__text">Контакты</p>
+                    <p class="footer__email">zakaz@eltechno.pro</p>
+                    <p class="footer__phone">+7 (910) 770-26-19</p>
+                    <p class="footer__address">195030, г. Санкт-Петербург, МО Ржевка, ул. Электропультовцев 7, литера М, помещение 24-Н, офис 225А</p>
+                </div>
+                <div class="footer__wrap footer__wrap-right">
+                    <a href="" class="footer__link">Договор оферты</a>
+                    <a href="" class="footer__link">Политика конфиденциальности</a>
+                    <p class="footer__text">©2024 Министерство образования и молодежной политики Владимирской области. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="./src/libs/jquery-3.6.4.min.js"></script>
+        <script src="./src/libs/slick.min.js"></script>
+        <script src="./src/js/main.js"></script>
+    </body>
+</html>

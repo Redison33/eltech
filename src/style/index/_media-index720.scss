@@ -1,0 +1,128 @@
+@import '../_vars.scss';
+@import '../_mixin.scss';
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 0 12px;
+    }
+    .header {
+        top: 43px;
+        &__container {
+            justify-content: space-between;
+            picture {
+            }
+
+            .nav {
+                display: none;
+                .list {
+                    .item {
+                        a {
+                        }
+                    }
+                }
+            }
+            .header__phone {
+                svg {
+                }
+            }
+            // }
+        }
+    }
+    .general {
+        padding-top: 179px;
+        padding-bottom: 80px;
+        &__container {
+            .general__wrap {
+                max-width: unset;
+                .general__title {
+                    margin-bottom: 42px;
+                    span {
+                        margin-top: 13px;
+                        font-size: 18px;
+                    }
+                }
+                .list {
+                    max-width: unset;
+                    flex-direction: row;
+                    gap: 12px;
+                    .item {
+                        font-size: 14px;
+                        margin-left: 22px;
+                    }
+                }
+            }
+            form {
+                display: none;
+            }
+        }
+    }
+    .budget {
+        padding: 80px 0;
+        .svg-left {
+            display: none;
+        }
+        .svg-right {
+            display: none;
+        }
+        &__container {
+            .budget__title {
+                margin-bottom: 24px;
+                font-size: 32px;
+            }
+            .card {
+                border-radius: 24px;
+                padding: 24px;
+                max-width: unset;
+                width: 100%;
+                flex-direction: row;
+                gap: 12px;
+                flex-wrap: wrap;
+                &__number {
+                    font-size: 24px;
+                    margin: 0;
+                }
+                &__title {
+                    font-size: 18px;
+                    margin: 0;
+                    margin-top: 5px;
+                    span {
+                    }
+                }
+                &__text {
+                    font-size: 16px;
+                }
+                &__button {
+                }
+                &-sell {
+                    flex-wrap: nowrap;
+                    gap: 24px;
+                    svg {
+                        max-width: 112px;
+                        min-width: unset;
+                        max-height: 112px;
+                    }
+                    .card__title {
+                        font-size: 18px;
+                    }
+                }
+                &-small {
+                    flex-wrap: nowrap;
+                    max-width: unset;
+                    width: 100%;
+                    border: none;
+                    padding: 0;
+                    margin-bottom: 18px;
+                    flex-direction: row;
+                    .card__title {
+                        max-width: 336px;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .budget__wrap {
+                gap: 10px;
+                flex-direction: column;
+            }
+        }
+    }
+}
