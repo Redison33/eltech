@@ -46,6 +46,7 @@ input {
         gap: 12px;
         // justify-content: space-between;
         .header__button {
+            display: none;
             border: none;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 135px;
@@ -441,11 +442,14 @@ input {
         z-index: 1;
         height: 100%;
     }
-    img {
+    &__img {
         position: absolute;
         right: 0;
         bottom: 0;
         z-index: 2;
+        &-720 {
+            display: none;
+        }
     }
     &__container {
         position: relative;
