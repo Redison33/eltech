@@ -99,6 +99,7 @@ input {
   line-height: normal;
   margin: 0;
   margin-bottom: 32px;
+  margin-right: 50px;
 }
 .modal form .modal-close {
   cursor: pointer;
@@ -2712,7 +2713,7 @@ input {
     grid-area: 1/1/2/3;
   }
   .contact__container form input {
-    width: unset;
+    width: 100%;
     margin-bottom: 12px;
   }
   .contact__container form button {
@@ -3476,7 +3477,7 @@ input {
     margin-bottom: 12px;
   }
   .contact__container form input {
-    width: unset;
+    width: 100%;
     margin-bottom: 3px;
   }
   .contact__container form button {
