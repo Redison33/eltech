@@ -11,7 +11,7 @@
     <body>
         <header class="header">
             <div class="header__container container">
-                <button class="header__button header__button--active">
+                <button class="header__button">
                     <span></span>
                     <span></span>
                 </button>
@@ -45,6 +45,29 @@
             </div>
         </header>
         <main>
+            <div class="modal-overlay"></div>
+            <div class="modal">
+                <form action="">
+                    <p class="form__header">Узнать стоимость проекта</p>
+                    <button class="modal-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M24 8L8 24M8 8L24 24" stroke="#091C45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="error-wrap">
+                        <input type="text" name="name" placeholder="ФИО" />
+                    </div>
+                    <div class="error-wrap">
+                        <input type="tel" name="phone" placeholder="Телефон" />
+                    </div>
+                    <div class="error-wrap">
+                        <input type="email" name="email" placeholder="Email" />
+                    </div>
+                    <input type="text" placeholder="Что нужно оснастить?" />
+                    <button>Отправить заявку</button>
+                    <p class="form__text">Нажимая “Отправить заявку” вы соглашаетесь с <a href="">Политикой конфиденциальности</a></p>
+                </form>
+            </div>
             <section class="general">
                 <div class="general__container container">
                     <div class="general__wrap">
@@ -59,9 +82,15 @@
                     </div>
                     <form action="">
                         <p class="form__header">Узнать стоимость проекта</p>
-                        <input type="text" placeholder="ФИО" />
-                        <input type="tel" placeholder="Телефон" />
-                        <input type="email" placeholder="Email" />
+                        <div class="error-wrap">
+                            <input type="text" name="name" placeholder="ФИО" />
+                        </div>
+                        <div class="error-wrap">
+                            <input type="tel" name="phone" placeholder="Телефон" />
+                        </div>
+                        <div class="error-wrap">
+                            <input type="email" name="email" placeholder="Email" />
+                        </div>
                         <input type="text" placeholder="Что нужно оснастить?" />
                         <button>Отправить заявку</button>
                         <p class="form__text">Нажимая “Отправить заявку” вы соглашаетесь с <a href="">Политикой конфиденциальности</a></p>
@@ -109,7 +138,7 @@
                     <div class="budget__wrap">
                         <div class="budget__card card card-small">
                             <p class="card__title">Всегда предлагаем выбор под ваши потребности:</p>
-                            <button class="card__button">Рассчитать экономию</button>
+                            <button class="card__button modal-open">Рассчитать экономию</button>
                         </div>
                         <div class="budget__card card">
                             <span class="card__number">01</span>
@@ -265,7 +294,7 @@
                             Поставка, установка и монтаж любого оборудования для школ, детских садов, домов культуры, гостиниц, спортивных и
                             туристических организаций
                         </p>
-                        <button class="feedback__button">Оставить заявку</button>
+                        <button class="feedback__button modal-open">Оставить заявку</button>
                     </div>
                     <div class="feedback__wrap feedback__wrap-right">
                         <div class="feedback__card card">
@@ -536,7 +565,7 @@
                                         Воплотим в жизнь любую (даже самую эксклюзивную) идею организации по созданию интерактивных и мультимедийных
                                         программ, используя современные технологии
                                     </p>
-                                    <button class="card__button">Обсудить идеи</button>
+                                    <button class="card__button modal-open">Обсудить идеи</button>
                                 </div>
                                 <img src="./src/img/info1.jfif" alt="" />
                             </div>
@@ -545,7 +574,7 @@
                                 <div class="card__content">
                                     <h3 class="card__title">Опытные монтажники</h3>
                                     <p class="card__text">Учитываем индивидуальные потребности и финансовые возможности каждого клиента</p>
-                                    <button class="card__button">Рассчитать установку</button>
+                                    <button class="card__button modal-open">Рассчитать установку</button>
                                 </div>
                             </div>
                         </div>
@@ -577,7 +606,7 @@
                                         <img src="./src/img/info-usb.png" alt="" />
                                         <p class="card__text">Также мы предоставим вам необходимые обучающие материалы на электронном носителе</p>
                                     </div>
-                                    <button class="card__button">Получить консультацию</button>
+                                    <button class="card__button modal-open">Получить консультацию</button>
                                 </div>
                                 <img src="./src/img/info3.jfif" alt="" />
                             </div>
@@ -591,7 +620,7 @@
                     <button class="experts__button">Задать вопрос специалисту</button>
                     <div class="experts__cards">
                         <div class="experts__card card">
-                            <img src="./src/img/experts1.jpg" alt="" />
+                            <img src="./src/img/experts1.jfif" alt="" />
                             <div class="card__content">
                                 <p class="card__text card__name">Солодухин Сергей Владимирович</p>
                                 <p class="card__text card__position">Генеральный директор</p>
@@ -600,7 +629,7 @@
                             </div>
                         </div>
                         <div class="experts__card card">
-                            <img src="./src/img/experts2.jpg" alt="" />
+                            <img src="./src/img/experts2.jfif" alt="" />
                             <div class="card__content">
                                 <p class="card__text card__name">Ширвари Денис Артурович</p>
                                 <p class="card__text card__position">Руководитель проекта</p>
@@ -609,7 +638,7 @@
                             </div>
                         </div>
                         <div class="experts__card card">
-                            <img src="./src/img/experts3.jpg" alt="" />
+                            <img src="./src/img/experts3.jfif" alt="" />
                             <div class="card__content">
                                 <p class="card__text card__name">Школьникова Полина Вячеславовна</p>
                                 <p class="card__text card__position">Менеджер проектов</p>
@@ -882,9 +911,15 @@
                     </div>
                     <form action="">
                         <p class="form__header">Узнать стоимость проекта</p>
-                        <input type="text" placeholder="ФИО" />
-                        <input type="tel" placeholder="Телефон" />
-                        <input type="email" placeholder="Email" />
+                        <div class="error-wrap">
+                            <input type="text" name="name" placeholder="ФИО" />
+                        </div>
+                        <div class="error-wrap">
+                            <input type="tel" name="phone" placeholder="Телефон" />
+                        </div>
+                        <div class="error-wrap">
+                            <input type="email" name="email" placeholder="Email" />
+                        </div>
                         <input type="text" placeholder="Что нужно оснастить?" />
                         <button>Отправить заявку</button>
                         <p class="form__text">Нажимая “Отправить заявку” вы соглашаетесь с <a href="">Политикой конфиденциальности</a></p>
@@ -896,7 +931,7 @@
             <div class="footer__container container">
                 <div class="footer__wrap footer__wrap-left">
                     <a href="" class="footer__logo"><img src="./src/img/footer-logo.png" alt="" /></a>
-                    <button class="footer__button">Связаться с нами</button>
+                    <button class="footer__button modal-open">Связаться с нами</button>
                 </div>
                 <div class="footer__wrap footer__wrap-center">
                     <p class="footer__text">Контакты</p>
@@ -912,6 +947,8 @@
             </div>
         </footer>
         <script src="./src/libs/jquery-3.6.4.min.js"></script>
+        <script src="./src/libs/jquery.mask.min.js"></script>
+        <script src="./src/libs/jquery.validate.min.js"></script>
         <script src="./src/libs/slick.min.js"></script>
         <script src="./src/js/main.js"></script>
     </body>
