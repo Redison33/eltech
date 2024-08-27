@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./src/libs/slick.css" />
+        <link rel="stylesheet" href="./src/style/general/style-general.css" />
         <link rel="stylesheet" href="./src/style/index/style-index.css" />
         <!-- <link rel="shortcut icon" href="./src/img/ico/Vector.ico" type="image/x-icon" /> -->
         <title>ЭлТехно</title>
@@ -16,8 +17,8 @@
                     <span></span>
                 </button>
                 <picture>
-                    <source media="(max-width: 1500px)" srcset="./src/img/header-logo2.png" />
-                    <img src="./src/img/header-logo.png" alt="" class="header__logo" />
+                    <source media="(max-width: 1500px)" srcset="./src/img/header-logo2.webp" />
+                    <img src="./src/img/header-logo.webp" alt="" class="header__logo" />
                 </picture>
                 <!-- <div class="header__wrap"> -->
                 <nav class="header__nav nav">
@@ -47,13 +48,13 @@
         <main>
             <div class="modal-overlay"></div>
             <div class="modal">
+                <button class="modal-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M24 8L8 24M8 8L24 24" stroke="#091C45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
                 <form action="">
                     <p class="form__header">Узнать стоимость проекта</p>
-                    <button class="modal-close">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                            <path d="M24 8L8 24M8 8L24 24" stroke="#091C45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
                     <div class="error-wrap">
                         <input type="text" name="name" placeholder="ФИО" />
                     </div>
@@ -67,6 +68,7 @@
                     <button>Отправить заявку</button>
                     <p class="form__text">Нажимая “Отправить заявку” вы соглашаетесь с <a href="">Политикой конфиденциальности</a></p>
                 </form>
+                <img src="./src/img/modal.webp" alt="" class="modal-img" />
             </div>
             <section class="general">
                 <div class="general__container container">
@@ -153,7 +155,7 @@
                     </div>
                 </div>
             </section>
-            <section class="pluses">
+            <section class="pluses section-animation">
                 <div class="pluses__container container">
                     <div class="pluses__content">
                         <h2 class="pluses__title">Мы обладаем всем необходимым, чтобы решить ваши проблемы: <span>опыт, знания и ресурсы</span></h2>
@@ -192,7 +194,7 @@
                     </div>
                 </div>
             </section>
-            <section class="FAQ">
+            <section class="FAQ section-animation">
                 <svg class="svg-left" xmlns="http://www.w3.org/2000/svg" width="598" height="905" viewBox="0 0 598 905" fill="none">
                     <path
                         d="M2.21182 933.735L348.982 542.192C369.244 519.261 380.44 489.598 380.434 458.861V392.443C380.422 361.708 369.211 332.053 348.937 309.134L0 -85H291.165L512.347 164.791C567.251 226.806 597.607 307.081 597.613 390.276V456.672C597.616 542.497 566.316 625.315 509.693 689.305L293.465 933.735H2.21182Z"
@@ -205,8 +207,8 @@
                         fill="white"
                     />
                 </svg>
-                <img class="FAQ__img" src="./src/img/FAQ.png" alt="" />
-                <img class="FAQ__img FAQ__img-720" src="./src/img/FAQ720.png" alt="" />
+                <img class="FAQ__img" src="./src/img/FAQ.webp" alt="" />
+                <img class="FAQ__img FAQ__img-720" src="./src/img/FAQ720.webp" alt="" />
                 <div class="FAQ__container container">
                     <h2 class="FAQ__title">Мы пониманием, какие <span>вопросы</span> вас волнуют при выборе поставщика:</h2>
                     <div class="FAQ__cards">
@@ -245,7 +247,7 @@
                                 />
                             </svg>
                             <p class="card__title">Сложности в составлении технического задания</p>
-                            <img src="./src/img/FAQ-card3.png" alt="" />
+                            <img src="./src/img/FAQ-card3.webp" alt="" />
                         </div>
                         <div class="FAQ__card card">
                             <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
@@ -286,7 +288,7 @@
                     </div>
                 </div>
             </section>
-            <section class="feedback">
+            <section class="feedback section-animation">
                 <div class="feedback__container container">
                     <div class="feedback__wrap feedback__wrap-left">
                         <h2 class="feedback__title">Возьмем всю работу <span>на себя!</span></h2>
@@ -315,7 +317,7 @@
                     </div>
                 </div>
             </section>
-            <section class="progress">
+            <section class="progress section-animation">
                 <svg class="svg-left" xmlns="http://www.w3.org/2000/svg" width="598" height="771" viewBox="0 0 598 771" fill="none">
                     <path
                         d="M2.21182 868.427L348.982 497.112C369.244 475.365 380.44 447.235 380.434 418.086V355.099C380.422 325.952 369.211 297.829 348.937 276.094L0 -97.679H291.165L512.347 139.208C567.251 198.019 597.607 274.147 597.613 353.044V416.01C597.616 497.401 566.316 575.94 509.693 636.625L293.465 868.427H2.21182Z"
@@ -340,7 +342,7 @@
                         </linearGradient>
                     </defs>
                 </svg>
-                <img src="./src/img/progress.png" alt="" />
+                <img src="./src/img/progress.webp" alt="" />
                 <div class="progress__container container">
                     <h2 class="progress__title">
                         <span>14&nbsp;ЛЕТ</span>
@@ -421,57 +423,57 @@
                     </p>
                 </div>
             </section>
-            <section class="deliver">
+            <section class="deliver section-animation">
                 <div class="deliver__container container">
                     <h2 class="deliver__title">Поставляем</h2>
                     <button class="deliver__button">Получить плайс</button>
                     <div class="deliver__cards">
                         <div class="deliver__card card">
-                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <img src="./src/img/deliver.webp" alt="" class="card__img" />
                             <p class="card__title">Оснащение предметных кабинетов</p>
                         </div>
                         <div class="deliver__card card">
-                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <img src="./src/img/deliver.webp" alt="" class="card__img" />
                             <p class="card__title">Оснащение предметных кабинетов</p>
                         </div>
                         <div class="deliver__card card">
-                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <img src="./src/img/deliver.webp" alt="" class="card__img" />
                             <p class="card__title">Оснащение предметных кабинетов</p>
                         </div>
                         <div class="deliver__card card">
-                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <img src="./src/img/deliver.webp" alt="" class="card__img" />
                             <p class="card__title">Оснащение предметных кабинетов</p>
                         </div>
                         <div class="deliver__card card">
-                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <img src="./src/img/deliver.webp" alt="" class="card__img" />
                             <p class="card__title">Оснащение предметных кабинетов</p>
                         </div>
                         <div class="deliver__card card">
-                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <img src="./src/img/deliver.webp" alt="" class="card__img" />
                             <p class="card__title">Оснащение предметных кабинетов</p>
                         </div>
                         <div class="deliver__card card">
-                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <img src="./src/img/deliver.webp" alt="" class="card__img" />
                             <p class="card__title">Оснащение предметных кабинетов</p>
                         </div>
                         <div class="deliver__card card">
-                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <img src="./src/img/deliver.webp" alt="" class="card__img" />
                             <p class="card__title">Оснащение предметных кабинетов</p>
                         </div>
                         <div class="deliver__card card">
-                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <img src="./src/img/deliver.webp" alt="" class="card__img" />
                             <p class="card__title">Оснащение предметных кабинетов</p>
                         </div>
                         <div class="deliver__card card">
-                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <img src="./src/img/deliver.webp" alt="" class="card__img" />
                             <p class="card__title">Оснащение предметных кабинетов</p>
                         </div>
                         <div class="deliver__card card">
-                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <img src="./src/img/deliver.webp" alt="" class="card__img" />
                             <p class="card__title">Оснащение предметных кабинетов</p>
                         </div>
                         <div class="deliver__card card">
-                            <img src="./src/img/deliver.jpg" alt="" class="card__img" />
+                            <img src="./src/img/deliver.webp" alt="" class="card__img" />
                             <p class="card__title">Оснащение предметных кабинетов</p>
                         </div>
                     </div>
@@ -482,34 +484,34 @@
                     <h2 class="brand__title">Оборудование известных отечественных и зарубежных брендов</h2>
                     <div class="brand__wrap">
                         <div class="bar">
-                            <img src="./src/img/brand1.png" alt="" />
-                            <img src="./src/img/brand2.png" alt="" />
-                            <img src="./src/img/brand3.png" alt="" />
-                            <img src="./src/img/brand4.png" alt="" />
-                            <img src="./src/img/brand5.png" alt="" />
-                            <img src="./src/img/brand6.png" alt="" />
+                            <img src="./src/img/brand1.webp" alt="" />
+                            <img src="./src/img/brand2.webp" alt="" />
+                            <img src="./src/img/brand3.webp" alt="" />
+                            <img src="./src/img/brand4.webp" alt="" />
+                            <img src="./src/img/brand5.webp" alt="" />
+                            <img src="./src/img/brand6.webp" alt="" />
                         </div>
                     </div>
                     <div class="brand__wrap">
                         <div class="bar bar-second">
-                            <img src="./src/img/brand7.png" alt="" />
-                            <img src="./src/img/brand8.png" alt="" />
-                            <img src="./src/img/brand9.png" alt="" />
-                            <img src="./src/img/brand10.png" alt="" />
-                            <img src="./src/img/brand11.png" alt="" />
-                            <img src="./src/img/brand12.png" alt="" />
-                            <img src="./src/img/brand13.png" alt="" />
-                            <img src="./src/img/brand14.png" alt="" />
-                            <img src="./src/img/brand15.png" alt="" />
+                            <img src="./src/img/brand7.webp" alt="" />
+                            <img src="./src/img/brand8.webp" alt="" />
+                            <img src="./src/img/brand9.webp" alt="" />
+                            <img src="./src/img/brand10.webp" alt="" />
+                            <img src="./src/img/brand11.webp" alt="" />
+                            <img src="./src/img/brand12.webp" alt="" />
+                            <img src="./src/img/brand13.webp" alt="" />
+                            <img src="./src/img/brand14.webp" alt="" />
+                            <img src="./src/img/brand15.webp" alt="" />
                         </div>
                     </div>
                     <div class="brand__wrap">
                         <div class="bar">
-                            <img src="./src/img/brand16.png" alt="" />
-                            <img src="./src/img/brand17.png" alt="" />
-                            <img src="./src/img/brand18.png" alt="" />
-                            <img src="./src/img/brand19.png" alt="" />
-                            <img src="./src/img/brand20.png" alt="" />
+                            <img src="./src/img/brand16.webp" alt="" />
+                            <img src="./src/img/brand17.webp" alt="" />
+                            <img src="./src/img/brand18.webp" alt="" />
+                            <img src="./src/img/brand19.webp" alt="" />
+                            <img src="./src/img/brand20.webp" alt="" />
                         </div>
                     </div>
                 </div>
@@ -567,10 +569,10 @@
                                     </p>
                                     <button class="card__button modal-open">Обсудить идеи</button>
                                 </div>
-                                <img src="./src/img/info1.jfif" alt="" />
+                                <img src="./src/img/info1.webp" alt="" />
                             </div>
                             <div class="info__card card">
-                                <img src="./src/img/info2.png" alt="" />
+                                <img src="./src/img/info2.webp" alt="" />
                                 <div class="card__content">
                                     <h3 class="card__title">Опытные монтажники</h3>
                                     <p class="card__text">Учитываем индивидуальные потребности и финансовые возможности каждого клиента</p>
@@ -603,24 +605,24 @@
                                         сотрудников
                                     </p>
                                     <div class="card__info">
-                                        <img src="./src/img/info-usb.png" alt="" />
+                                        <img src="./src/img/info-usb.webp" alt="" />
                                         <p class="card__text">Также мы предоставим вам необходимые обучающие материалы на электронном носителе</p>
                                     </div>
                                     <button class="card__button modal-open">Получить консультацию</button>
                                 </div>
-                                <img src="./src/img/info3.jfif" alt="" />
+                                <img src="./src/img/info3.webp" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="experts">
+            <section class="experts section-animation">
                 <div class="experts__container container">
                     <h2 class="experts__title">Эксперты Элтехно</h2>
                     <button class="experts__button">Задать вопрос специалисту</button>
                     <div class="experts__cards">
                         <div class="experts__card card">
-                            <img src="./src/img/experts1.jfif" alt="" />
+                            <img src="./src/img/experts1.webp" alt="" />
                             <div class="card__content">
                                 <p class="card__text card__name">Солодухин Сергей Владимирович</p>
                                 <p class="card__text card__position">Генеральный директор</p>
@@ -629,7 +631,7 @@
                             </div>
                         </div>
                         <div class="experts__card card">
-                            <img src="./src/img/experts2.jfif" alt="" />
+                            <img src="./src/img/experts2.webp" alt="" />
                             <div class="card__content">
                                 <p class="card__text card__name">Ширвари Денис Артурович</p>
                                 <p class="card__text card__position">Руководитель проекта</p>
@@ -638,7 +640,7 @@
                             </div>
                         </div>
                         <div class="experts__card card">
-                            <img src="./src/img/experts3.jfif" alt="" />
+                            <img src="./src/img/experts3.webp" alt="" />
                             <div class="card__content">
                                 <p class="card__text card__name">Школьникова Полина Вячеславовна</p>
                                 <p class="card__text card__position">Менеджер проектов</p>
@@ -726,10 +728,10 @@
                         санитарно-эпидемиологические заключения
                     </h2>
                     <div class="certificates__imgs">
-                        <img src="./src/img/certificates1.jfif" alt="" />
-                        <img src="./src/img/certificates2.jfif" alt="" />
-                        <img src="./src/img/certificates3.jfif" alt="" />
-                        <img src="./src/img/certificates4.jfif" alt="" />
+                        <img src="./src/img/certificates1.webp" alt="" />
+                        <img src="./src/img/certificates2.webp" alt="" />
+                        <img src="./src/img/certificates3.webp" alt="" />
+                        <img src="./src/img/certificates4.webp" alt="" />
                     </div>
                 </div>
             </section>
@@ -779,11 +781,11 @@
                                     </li>
                                 </ul>
                                 <div class="slide__tags">
-                                    <a href="" class="slide__tag">Новостройка</a>
-                                    <a href="" class="slide__tag">Оснащение по 465 приказу</a>
+                                    <span href="" class="slide__tag">Новостройка</span>
+                                    <span href="" class="slide__tag">Оснащение по 465 приказу</span>
                                 </div>
                             </div>
-                            <img src="./src/img/cases.jfif" alt="" />
+                            <img src="./src/img/cases.webp" alt="" />
                         </div>
                         <div class="cases__slide slide">
                             <div class="slide__content">
@@ -812,11 +814,11 @@
                                     </li>
                                 </ul>
                                 <div class="slide__tags">
-                                    <a href="" class="slide__tag">Новостройка</a>
-                                    <a href="" class="slide__tag">Оснащение по 465 приказу</a>
+                                    <span href="" class="slide__tag">Новостройка</span>
+                                    <span href="" class="slide__tag">Оснащение по 465 приказу</span>
                                 </div>
                             </div>
-                            <img src="./src/img/cases.jfif" alt="" />
+                            <img src="./src/img/cases.webp" alt="" />
                         </div>
                         <div class="cases__slide slide">
                             <div class="slide__content">
@@ -845,11 +847,11 @@
                                     </li>
                                 </ul>
                                 <div class="slide__tags">
-                                    <a href="" class="slide__tag">Новостройка</a>
-                                    <a href="" class="slide__tag">Оснащение по 465 приказу</a>
+                                    <span href="" class="slide__tag">Новостройка</span>
+                                    <span href="" class="slide__tag">Оснащение по 465 приказу</span>
                                 </div>
                             </div>
-                            <img src="./src/img/cases.jfif" alt="" />
+                            <img src="./src/img/cases.webp" alt="" />
                         </div>
                     </div>
                 </div>
@@ -930,7 +932,7 @@
         <footer class="footer">
             <div class="footer__container container">
                 <div class="footer__wrap footer__wrap-left">
-                    <a href="" class="footer__logo"><img src="./src/img/footer-logo.png" alt="" /></a>
+                    <a href="" class="footer__logo"><img src="./src/img/footer-logo.webp" alt="" /></a>
                     <button class="footer__button modal-open">Связаться с нами</button>
                 </div>
                 <div class="footer__wrap footer__wrap-center">

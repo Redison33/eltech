@@ -1,51 +1,6 @@
 @import '../_vars.scss';
 @import '../_mixin.scss';
 @media (max-width: 1500px) {
-    .container {
-        margin: 0 30px;
-        // padding: 0 30px;
-    }
-    // .header {
-    //     // padding: 81px 0;
-    //     // width: 100%;
-    //     // position: absolute;
-    //     // top: 81px;
-    //     &__container {
-    //         display: flex;
-    //         gap: 12px;
-    //         justify-content: space-between;
-    //         .nav {
-    //             padding: 18px 32px;
-    //             background-color: #ffffff;
-    //             border-radius: 135px;
-    //             .list {
-    //                 display: flex;
-    //                 gap: 12px;
-    //                 list-style: none;
-    //                 padding: 0;
-    //                 margin: 0;
-    //                 .item {
-    //                     a {
-    //                         color: #091c45;
-    //                         text-decoration: none;
-    //                         font-size: 16px;
-    //                         font-weight: 500;
-    //                         line-height: normal;
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //         .header__phone {
-    //             padding: 14px 16px;
-    //             border-radius: 135px;
-    //             background-color: #ffffff;
-    //             svg {
-    //                 width: 24px;
-    //                 height: 24px;
-    //             }
-    //         }
-    //     }
-    // }
     .general {
         padding-top: 251px;
         padding-bottom: 123px;
@@ -456,20 +411,6 @@
                             font-size: 14px;
                         }
                     }
-                }
-            }
-        }
-    }
-    .footer {
-        &__container {
-            flex-wrap: wrap;
-            gap: 42px;
-            .footer__wrap {
-                &-right {
-                    max-width: unset;
-                    width: 100%;
-                    flex-direction: row-reverse;
-                    justify-content: space-between;
                 }
             }
         }

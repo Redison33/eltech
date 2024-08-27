@@ -1,39 +1,80 @@
 document.addEventListener('DOMContentLoaded', function () {
     for (const track of document.querySelectorAll('.bar')) {
         const logos = track.innerHTML;
-        track.innerHTML += logos; // Дублируем логотипы
+        track.innerHTML += logos;
     }
-    if (window.innerWidth > 1000) {
-        $('.cases__slider').slick({
-            centerMode: true,
-            centerPadding: '285px',
-            slidesToShow: 1,
-            infinite: false,
-            initialSlide: 1,
-            responsive: [
-                {
-                    breakpoint: 1500,
-                    settings: {
-                        // arrows: false,
-                        centerMode: true,
-                        centerPadding: '117px',
-                        slidesToShow: 1,
-                        infinite: false,
-                        initialSlide: 1,
-                    },
-                },
-                //     {
-                //         breakpoint: 480,
-                //         settings: {
-                //             arrows: false,
-                //             centerMode: true,
-                //             centerPadding: '40px',
-                //             slidesToShow: 1,
-                //         },
-                //     },
-            ],
+    // Функция, которая добавляет класс анимации ко всем карточкам внутри секции
+    function animateCardsInSection(section) {
+        let cards = section.querySelectorAll('.card'); // Ищем все карточки в секции
+        cards.forEach((card) => {
+            card.classList.add('card-active'); // Добавляем класс с анимацией
         });
     }
+
+    // Callback для IntersectionObserver
+    function callback(entries, observer) {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                animateCardsInSection(entry.target); // Анимация карточек при появлении секции
+                observer.unobserve(entry.target); // Останавливаем наблюдение после анимации
+            }
+        });
+    }
+
+    // Настройки для IntersectionObserver
+    let options = {
+        root: null, // null означает, что наблюдение происходит относительно viewport
+        rootMargin: '0px',
+        threshold: 0.3, // 50% секции должны быть видны
+    };
+
+    // Создаем IntersectionObserver
+    let observer = new IntersectionObserver(callback, options);
+
+    // Выбираем все секции и устанавливаем наблюдение за каждой из них
+    let sections = document.querySelectorAll('.section-animation');
+    sections.forEach((section) => {
+        observer.observe(section); // Наблюдаем за каждой секцией
+    });
+
+    function initSlickSlider() {
+        if (window.innerWidth > 1000) {
+            var maxSlideWidth = 1318;
+            var windowWidth = window.innerWidth;
+            var slideWidth = Math.min(windowWidth, maxSlideWidth);
+            var centerPadding = (windowWidth - slideWidth) / 2;
+
+            $('.cases__slider').slick({
+                centerMode: true,
+                centerPadding: centerPadding + 'px',
+                slidesToShow: 1,
+                infinite: false,
+                initialSlide: 1,
+                responsive: [
+                    {
+                        breakpoint: 1500,
+                        settings: {
+                            centerMode: true,
+                            centerPadding: '117px',
+                            slidesToShow: 1,
+                            infinite: false,
+                            initialSlide: 1,
+                        },
+                    },
+                ],
+            });
+        }
+    }
+
+    $(document).ready(function () {
+        initSlickSlider();
+
+        // Пересчитываем параметры слайдера при изменении размера окна
+        $(window).on('resize', function () {
+            $('.cases__slider').slick('unslick');
+            initSlickSlider();
+        });
+    });
     document.querySelector('.header__button').addEventListener('click', () => {
         document.querySelector('.header__button').classList.toggle('header__button--active');
         document.querySelector('.header__nav').classList.toggle('nav--active');
