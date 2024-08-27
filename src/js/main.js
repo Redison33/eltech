@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-    for (const track of document.querySelectorAll('.bar')) {
-        const logos = track.innerHTML;
-        track.innerHTML += logos;
+    if (document.querySelector('.bar')) {
+        for (const track of document.querySelectorAll('.bar')) {
+            const logos = track.innerHTML;
+            track.innerHTML += logos;
+        }
     }
     // Функция, которая добавляет класс анимации ко всем карточкам внутри секции
     function animateCardsInSection(section) {
@@ -75,31 +77,37 @@ document.addEventListener('DOMContentLoaded', function () {
             initSlickSlider();
         });
     });
-    document.querySelector('.header__button').addEventListener('click', () => {
-        document.querySelector('.header__button').classList.toggle('header__button--active');
-        document.querySelector('.header__nav').classList.toggle('nav--active');
-        if (window.innerWidth <= 620) {
-            if (document.querySelector('.header__nav').classList.contains('nav--active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = '';
+    if (document.querySelector('.header__button')) {
+        document.querySelector('.header__button').addEventListener('click', () => {
+            document.querySelector('.header__button').classList.toggle('header__button--active');
+            document.querySelector('.header__nav').classList.toggle('nav--active');
+            if (window.innerWidth <= 620) {
+                if (document.querySelector('.header__nav').classList.contains('nav--active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
             }
-        }
-    });
-
-    for (const modalBtnOpen of document.querySelectorAll('.modal-open')) {
-        modalBtnOpen.addEventListener('click', () => {
-            document.querySelector('.modal').classList.add('modal--active');
-            document.querySelector('.modal-overlay').classList.add('modal-overlay--active');
-            document.body.style.overflow = 'hidden';
         });
     }
-    document.querySelector('.modal-close').addEventListener('click', (e) => {
-        e.preventDefault();
-        document.querySelector('.modal').classList.remove('modal--active');
-        document.querySelector('.modal-overlay').classList.remove('modal-overlay--active');
-        document.body.style.overflow = '';
-    });
+
+    if (document.querySelector('.modal-open')) {
+        for (const modalBtnOpen of document.querySelectorAll('.modal-open')) {
+            modalBtnOpen.addEventListener('click', () => {
+                document.querySelector('.modal').classList.add('modal--active');
+                document.querySelector('.modal-overlay').classList.add('modal-overlay--active');
+                document.body.style.overflow = 'hidden';
+            });
+        }
+    }
+    if (document.querySelector('.modal-close')) {
+        document.querySelector('.modal-close').addEventListener('click', (e) => {
+            e.preventDefault();
+            document.querySelector('.modal').classList.remove('modal--active');
+            document.querySelector('.modal-overlay').classList.remove('modal-overlay--active');
+            document.body.style.overflow = '';
+        });
+    }
     $('form').each(function () {
         $(this).validate({
             rules: {
